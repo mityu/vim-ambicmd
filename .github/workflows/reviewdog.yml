@@ -1,0 +1,15 @@
+name: reviewdog
+on:
+  pull_request:
+
+jobs:
+  reviewdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@4
+      - name: vint
+        uses: reviewdog/action-vint@1
+        with:
+          github_token: ${{ secrets.github_token }}
