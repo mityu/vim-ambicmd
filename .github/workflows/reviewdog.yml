@@ -9,6 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@4
+        fetch_depth: 0
       - name: vint
         uses: reviewdog/action-vint@1
         with:
