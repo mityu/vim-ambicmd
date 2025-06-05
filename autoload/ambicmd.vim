@@ -1,3 +1,7 @@
+let s:unused = "hogehoge"
+autocmd User foo-bar-baz-piyo echo 'abc' =~ 'cde'
+
+
 if !exists('g:ambicmd#build_rule')
   let g:ambicmd#build_rule = 'ambicmd#default_rule'
 endif
